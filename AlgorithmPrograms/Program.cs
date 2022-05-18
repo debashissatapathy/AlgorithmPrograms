@@ -20,13 +20,14 @@ namespace AlgorithmPrograms
                         int n = str.Length;
                         PermutationString.permute(str, 0, n - 1);
                         break;
-                    //case 2:
-                    //    Console.WriteLine("********* Bubble Sort**********");
-                    //    BubbleSort b = new BubbleSort();
-                    //    b.BSort();
-                    //    break;
+                    case 2:
+                        Console.WriteLine("********* Bubble Sort**********");
+                        BubbleSort b = new BubbleSort();
+                        b.Bubble_Sort();
+                        break;
 
                 }
+                Console.Write("\n");
             }
 
         }
