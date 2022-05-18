@@ -9,7 +9,7 @@ namespace AlgorithmPrograms
             bool status = true;
             while (status)
             {
-                Console.WriteLine("Algorithms Problems:\n1)Permutation of string\n2)Bubble Sort\n");
+                Console.WriteLine("Algorithms Problems:\n1. Permutation of string\n2. Bubble Sort\n3. Insertion Sort");
                 int op = Convert.ToInt32(Console.ReadLine());
                 switch (op)
                 {
@@ -24,6 +24,11 @@ namespace AlgorithmPrograms
                         Console.WriteLine("********* Bubble Sort**********");
                         BubbleSort b = new BubbleSort();
                         b.Bubble_Sort();
+                        break;
+                    case 3:
+                        Console.WriteLine("********** Insertion Sort ************");
+                        InsertionSort insert = new InsertionSort();
+                        insert.Insertion_Sort();
                         break;
 
                 }
