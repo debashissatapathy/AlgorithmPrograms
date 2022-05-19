@@ -9,7 +9,7 @@ namespace AlgorithmPrograms
             bool status = true;
             while (status)
             {
-                Console.WriteLine("Algorithms Problems:\n1. Permutation of string\n2. Bubble Sort\n3. Insertion Sort\n4. Binary Search Word\n5. Merge Sort\n6. Anagram Detection");
+                Console.WriteLine("Algorithms Problems:\n1. Permutation of string\n2. Bubble Sort\n3. Insertion Sort\n4. Binary Search Word\n5. Merge Sort\n6. Anagram Detection\n7. Prime Number");
                 int op = Convert.ToInt32(Console.ReadLine());
                 switch (op)
                 {
@@ -83,6 +83,10 @@ namespace AlgorithmPrograms
                         {
                             Console.WriteLine("No! Given words  {0} and {1} are not Anagrams!", Word1, Word2);
                         }
+                        break;
+                    case 7:
+                        PrimeNumber prime = new PrimeNumber();
+                        prime.Prime_Number();
                         break;
                 }
                 Console.Write("\n");
