@@ -9,7 +9,7 @@ namespace AlgorithmPrograms
             bool status = true;
             while (status)
             {
-                Console.WriteLine("Algorithms Problems:\n1. Permutation of string\n2. Bubble Sort\n3. Insertion Sort\n4. Binary Search Word\n5. Merge Sort");
+                Console.WriteLine("Algorithms Problems:\n1. Permutation of string\n2. Bubble Sort\n3. Insertion Sort\n4. Binary Search Word\n5. Merge Sort\n6. Anagram Detection");
                 int op = Convert.ToInt32(Console.ReadLine());
                 switch (op)
                 {
@@ -66,6 +66,23 @@ namespace AlgorithmPrograms
                             Console.Write(array[i] + " ");
                         }
                         Console.WriteLine();
+                        break;
+                    case 6:
+                        AnagramDetection anagram = new AnagramDetection();
+                        Console.WriteLine("Please enter the two strings to find if they are anagrams or not. :");
+                        Console.WriteLine("Enter Word1");
+                        string Word1 = Console.ReadLine();
+                        Console.WriteLine("Enter Word2");
+                        string Word2 = Console.ReadLine();
+
+                        if (anagram.AnagramDetector(Word1, Word2))
+                        {
+                            Console.WriteLine("Given words {0} and {1} are Anagrams!", Word1, Word2);
+                        }
+                        else
+                        {
+                            Console.WriteLine("No! Given words  {0} and {1} are not Anagrams!", Word1, Word2);
+                        }
                         break;
                 }
                 Console.Write("\n");
